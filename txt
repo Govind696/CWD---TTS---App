@@ -1,0 +1,10 @@
+#0acffe  --- backkcolor 1
+#495aff  --- backkcolor 2
+linear-gradient(to right, #0acffe 0%, #495aff 100%)
+
+ body {
+        background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+      }
+
+
+      .

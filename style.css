@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color:  #dbdbdb; */
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    /* background-color: #18a5ff; */
+    /* background: linear-gradient(90deg, rgba(0,0,0,0.4654236694677871) 0%, rgba(0,0,0,0.5970763305322129) 0%, rgba(0,0,0,0.8183648459383753) 100%); */
+    /* background-color:  #2db2fd; */
+}
+
+nav {
+    height: 12vh;
+    /* background-color: #f3f3f3; */
+    /* background: linear-gradient(90deg, rgba(0,0,0,0.4654236694677871) 0%, rgba(0,0,0,0.5970763305322129) 0%, rgba(0,0,0,0.8183648459383753) 100%); */
+    background-color: #18a5ff;
+    color: rgb(255, 255, 255);
+    /* color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 16px -27px;
+}
+
+.logo img {
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    padding: 5px 10px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+}
+
+main {
+    margin: auto;
+    margin-top: 2rem;
+    width: 70%;
+    max-width: 80%;
+}
+
+main h1 {
+    text-align: center;
+    margin: 2rem 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    /* background-color: #dcdcdc; */background-color: #18a5ff;
+    /* background: linear-gradient(90deg, rgba(78,255,169,1) 0%, rgba(152,255,229,1) 100%); */
+    padding: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 85%;
+}
+
+.container label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.container textarea {
+	width: 100%;
+	border: 2px solid;
+	border-radius: 5px;
+	height: 20vh;
+	letter-spacing: 0.4px;
+	margin: 20px 0px;
+	padding: 8px;
+}
+
+.container textarea::placeholder {
+    line-height: 30px;
+    text-align: center;
+}
+
+#submit-btn {
+    padding: 6px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4654236694677871) 0%, rgba(0, 0, 0, 0.5970763305322129) 0%, rgba(0, 0, 0, 0.8183648459383753) 100%);
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    height: 100%;
+    width: 35%;
+}
+
+#output-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: -moz-righ;
+}
+
+#output-container h2 {
+    font-size: 1.6rem;
+    margin-right: 12px;
+    text-transform: uppercase;
+}
+
+.app-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.labal-badge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.labal-badge label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#pitch-value {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#rate-value {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#speech-audio {
+    width: 78%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4654236694677871) 0%, rgba(0, 0, 0, 0.5970763305322129) 0%, rgba(0, 0, 0, 0.8183648459383753) 100%);
+}
+
+.voice-select {
+    height: calc(2.875rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: white;
+    margin-top: 20px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4654236694677871) 0%, rgba(0, 0, 0, 0.5970763305322129) 0%, rgba(0, 0, 0, 0.8183648459383753) 100%);
+    width: 100%;
+}
+
+.voice-select option {
+    color: black;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CWD -- TTS -- Text to Speech app</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/index.js" defer=""></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="" alt="Code-With-Gour" />
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact me</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>CWS's -- Text to Speech App</h1>
+    <div class="main-img">
+      <!-- <img src="" alt="TTS Main IMG" /> -->
+    </div>
+    <div class="container">
+      <div class="form">
+        <label for="text-input">Enter Text:</label>
+        <textarea id="text-input" rows="4" cols="50" placeholder="Type anything..."></textarea>
+        <div class="app-btns">
+          <div class="rate-btn">
+            <div class="labal-badge">
+              <label for="rate">Rate</label>
+              <div id="rate-value" class="rate-badge">1</div>
+            </div>
+            <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1" />
+          </div>
+          <button id="submit-btn">Convert to Speech</button>
+          <div class="pitch-btn">
+            <div class="labal-badge">
+              <label for="pitch">Pitch</label>
+              <div id="pitch-value" class="pitch-badge">1</div>
+            </div>
+            <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1" />
+          </div>
+        </div>
+        <select id="voice-select" class="voice-select">
+          </select>
+      </div>
+      <div id="output-container">
+        <h2>Output:</h2>
+        <audio id="speech-audio" controls></audio>
+        <!-- <a id="download-btn" src="#" download>Download Audio</a> -->
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>
